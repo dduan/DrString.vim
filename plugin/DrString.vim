@@ -9,9 +9,10 @@ function! DrString#Format()
         return
     endif
 
-    let line = line(".")
     silent w
+    let line = line(".")
     silent execute "!" . g:drstring_command . " format --add-placeholder -i " . bufname("%") . " --start-line " . line . " --end-line " . line
+    e
 endfunction
 
 function! DrString#Check()
@@ -24,4 +25,5 @@ function! DrString#Check()
     let line = line(".")
     silent w
     execute "!" . g:drstring_command . " check -i " . bufname("%")
+    e
 endfunction
