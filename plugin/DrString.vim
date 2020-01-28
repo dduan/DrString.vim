@@ -14,6 +14,18 @@ function! DrString#Format() range
     e
 endfunction
 
+function! DrString#FormatAll()
+    let buf = bufname("%")
+    if buf ==# ""
+        echom "Save buffer to a file first."
+        return
+    endif
+
+    silent w
+    silent execute "!" . g:drstring_command . " format --add-placeholder -i " . bufname("%")
+    e
+endfunction
+
 function! DrString#Check()
     let buf = bufname("%")
     if buf ==# ""
