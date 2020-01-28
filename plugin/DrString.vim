@@ -3,7 +3,7 @@ if !exists("g:drstring_command")
 endif
 
 function! DrString#Format()
-    write
+    silent write
     let buf = bufname("%")
     if buf ==# ""
         echom "Save buffer to a file first."
@@ -15,7 +15,7 @@ function! DrString#Format()
 endfunction
 
 function! DrString#Check()
-    write
+    silent write
     let buf = bufname("%")
     if buf ==# ""
         echom "Save buffer to a file first."
