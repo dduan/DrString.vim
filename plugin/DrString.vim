@@ -9,5 +9,5 @@ endfunction
 
 function! DrString#Check()
     let line = line(".")
-    silent execute "!" . g:drstring_command . " check -i " . bufname("%")
+    execute "!" . g:drstring_command . " check -i " . bufname("%")
 endfunction
