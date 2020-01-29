@@ -33,7 +33,6 @@ function! DrString#Check()
         return
     endif
 
-    let line = line(".")
     silent w
     execute "!" . g:drstring_command . " check -i " . bufname("%")
     e
