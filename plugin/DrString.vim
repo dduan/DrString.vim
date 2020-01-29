@@ -37,3 +37,7 @@ function! DrString#Check()
     execute "!" . g:drstring_command . " check -i " . bufname("%")
     e
 endfunction
+
+function! DrString#Version()
+    echom systemlist(g:drstring_command . " version")[0]
+endfunction
