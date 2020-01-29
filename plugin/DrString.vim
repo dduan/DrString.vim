@@ -10,7 +10,7 @@ function! DrString#Format() range
     endif
 
     silent w
-    silent execute "!" . g:drstring_command . " format --add-placeholder -i " . bufname("%") . " --start-line " . (a:firstline - 1) . " --end-line " . (a:lastline - 1)
+    silent execute "!" . g:drstring_command . " format --add-placeholder -i " . buf . " --start-line " . (a:firstline - 1) . " --end-line " . (a:lastline - 1)
     e
 endfunction
 
@@ -22,7 +22,7 @@ function! DrString#FormatAll()
     endif
 
     silent w
-    silent execute "!" . g:drstring_command . " format --add-placeholder -i " . bufname("%")
+    silent execute "!" . g:drstring_command . " format --add-placeholder -i " . buf
     e
 endfunction
 
@@ -34,7 +34,7 @@ function! DrString#Check()
     endif
 
     silent w
-    execute "!" . g:drstring_command . " check -i " . bufname("%")
+    execute "!" . g:drstring_command . " check -i " . buf
     e
 endfunction
 
