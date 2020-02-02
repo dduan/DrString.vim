@@ -27,7 +27,7 @@ autocmd FileType swift vnoremap <buffer> <leader>d :call DrString#Format()<cr>
 ## Function
 
 
-| Name | Description |
+| Function | Description |
 | ---- | ----------- |
 | `DrString#Format()` | Formats docstring under the cursor or selecetd range. Generate placeholders for missing docstring components. |
 | `DrString#FormatAll()` | Like `DrString#Format()` but for the entire file. |
