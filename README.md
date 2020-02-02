@@ -17,7 +17,7 @@ Plug 'dduan/DrString.vim'
 
 Call directly or bind one of the included functions. For example, add the
 following in your config to make `<leader>d` generate and format docstrings
-withing selected range:
+within selected range:
 
 ```vim
 autocmd FileType swift nnoremap <buffer> <leader>d :call DrString#Format()<cr>
