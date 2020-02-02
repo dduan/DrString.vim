@@ -37,4 +37,4 @@ a file first_.
 
 ## License
 
-[MIT][LICENSE.md]
+[MIT](LICENSE.md).
