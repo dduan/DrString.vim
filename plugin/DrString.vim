@@ -34,7 +34,7 @@ function! DrString#Check()
     endif
 
     silent w
-    cexpr system(g:drstring_command . " check -i " . buf)
+    cexpr system(g:drstring_command . " check -x '' -i " . buf)
     e
 endfunction
 
