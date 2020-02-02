@@ -31,7 +31,7 @@ autocmd FileType swift vnoremap <buffer> <leader>d :call DrString#Format()<cr>
 | ---- | ----------- |
 | DrString#Format() | Formats docstring under the cursor or selecetd range. Generate placeholders for missing docstring components. |
 | DrString#FormatAll() | Like `DrString#Format()` but for the entire file. |
-| DrString#Check() | Runs DrString's `check` subcommand for this file. |
+| DrString#Check() | Runs DrString's `check` subcommand for the file associated with the buffer. If any problems are found, show them the quickfix window|
 | DrString#Version() | Shows DrString's release version. |
 
 _For formatting and checking commands, the Vim buffer must have been written to
