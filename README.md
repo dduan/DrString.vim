@@ -6,7 +6,7 @@ Wrappers for [DrString][], a DocString formatter and linter for Swift.
 
 ## Usage
 
-Install [DrString](https://github.com/dduan/DrString/blob/master/Documentation/GettingStarted.md#install).
+First, install [DrString](https://github.com/dduan/DrString/blob/master/Documentation/GettingStarted.md#install).
 
 Install `dduan/DrString.vim` with your plugin mananger. For example, with
 vim-plug this would be
