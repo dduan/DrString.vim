@@ -34,3 +34,7 @@ autocmd FileType swift vnoremap <buffer> <leader>d :call DrString#Format()<cr>
 
 _For formatting and checking commands, the Vim buffer must have been written to
 a file first_.
+
+## License
+
+[MIT][LICENSE.md]
